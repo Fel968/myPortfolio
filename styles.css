@@ -1,16 +1,78 @@
+*{  margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+#profile_picture{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    background-color: rgb(71, 70, 70); 
+}
+
+
+
+.to_align{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+nav{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; 
+    position: absolute;  
+    padding-top: 50px;
+}
+
+.nav_items{
+    color: black;
+}
+
 .hero {
-    background-color: #D9DDE0;
+    background-color: #ECF0F3;
     height: 100vh;
     width: 100vw;
-    /* position: absolute;   */
+    overflow: hidden;
+
 }
+
 .hero_items{
-    position: relative;
+    /* position: relative; */
     display: grid;
     grid-template-columns: auto auto;
-    
-    
-    
-
+    align-items: center;
+    justify-content: space-around;  
 
 }
+.bg_hero{
+    position: relative;
+    top: 100px;
+    right: 50px;
+    background-color: rgb(241, 138, 154);
+    
+}
+.text_on_hero{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: white; /* Change background color when sticky */
+    /* box-shadow: 0px 4px 2px -2px gray;  */
+  }
