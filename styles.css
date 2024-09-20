@@ -248,6 +248,7 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        row-gap: 20px;
 }
 .images{
    background-color: #41A4F5;
