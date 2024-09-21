@@ -69,3 +69,21 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+const section = document.querySelector('.section');
+
+        section.addEventListener('mousemove', function(e) {
+            const { offsetWidth: width, offsetHeight: height } = section;
+            let { offsetX: x, offsetY: y } = e;
+
+            if (this !== e.target) {
+                x = x + e.target.offsetLeft;
+                y = y + e.target.offsetTop;
+            }
+
+            const walk = 50; // Shadow length
+            const xWalk = Math.round((x / width * walk) - (walk / 2));
+            const yWalk = Math.round((y / height * walk) - (walk / 2));
+
+            section.style.boxShadow = `${xWalk}px ${yWalk}px 30px rgba(0, 0, 0, 0.3)`;
+        });
