@@ -1,89 +1,21 @@
-// const navbar = document.querySelector('nav');
-// const stickyOffset = navbar.offsetTop;
-// function toggleSticky() {
-//     if (window.pageYOffset >= 100) {
-//       navbar.classList.add("sticky");
+
+// window.addEventListener('scroll', function() {
+//     var navbar = document.getElementById('navbar');
+//     if (window.scrollY > 0) {
+//         navbar.style.backgroundColor = '#000'; // Change background color to black
 //     } else {
-//       navbar.classList.remove("sticky");
+//         navbar.style.backgroundColor = 'transparent';
 //     }
-//   }
-  
-//   // Add scroll event listener
-//   window.onscroll = function() {
-//     toggleSticky();
-//   };
+// });
 
-var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
-
-TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
+window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('fixed');   
+        navbar.style.backgroundColor = '#000'; // Change background color to black
     } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
+        navbar.classList.remove('fixed');
+        navbar.style.backgroundColor = 'transparent';
+}
+});
 
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-    }
-
-    setTimeout(function() {
-    that.tick();
-    }, delta);
-};
-
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-};
-
-const section = document.querySelector('.section');
-
-        section.addEventListener('mousemove', function(e) {
-            const { offsetWidth: width, offsetHeight: height } = section;
-            let { offsetX: x, offsetY: y } = e;
-
-            if (this !== e.target) {
-                x = x + e.target.offsetLeft;
-                y = y + e.target.offsetTop;
-            }
-
-            const walk = 50; // Shadow length
-            const xWalk = Math.round((x / width * walk) - (walk / 2));
-            const yWalk = Math.round((y / height * walk) - (walk / 2));
-
-            section.style.boxShadow = `${xWalk}px ${yWalk}px 30px rgba(0, 0, 0, 0.3)`;
-        });

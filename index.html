@@ -7,193 +7,74 @@
     <title>Felicity Semetey</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./index.js" defer></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-    </style>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+   
 </head>
 
-<body class="quicksand-uniquifier" style="font-family: sans-serif; background-color: white;">
+<body >
 
-    <nav>
-        <div class="to_align" style="column-gap: 10px; padding-left: 30px;">
-            <h2 style="padding-left: 70px; color: black;">INBIO</h2>
-        </div>
-
-        <div class="to_align" style="width: 60%;">
+    <nav id="navbar">
+            <h2 class="logo">SMTY</h2>
+            <div class="to_align" >
             <a class="nav_items" href="#">About</a>
+            <a class="nav_items" href="#">Skills</a>
             <a class="nav_items" href="#">Portfolio</a>
             <a class="nav_items" href="#">Resume</a>
-            <a class="nav_items" href="#">Pricing</a>
             <a class="nav_items" href="#">Contact</a>
         </div>
     </nav>
 
-    <section class="hero section">
-        <div class="hero_items">
+    <section class="hero">
+        <div class="hero_items overlay">
             <div class="text_on_hero">
-                <p>WELCOME TO MY PAGE</p>
-                <h1 style="font-size: 50px;">Hi, I'm Felicity Semetey</h1>
+                <!-- <p style="padding-top: 3rem;" >Welcome to my page</p> -->
+                <h1 style="font-size: 60px; padding-top: 4rem; "> <span style="color: #9e530c;">Hi,</span> I'm Felicity Semetey</h1>
 
-                <h1>
-                    <a href="" class="typewrite" data-period="2000" data-type='[ "a developer...", "a creator...", "an artist...", "I Love to Develop." ]'>
-                      <span class="wrap"></span>
-                    </a>
-                  </h1>
+                <h1 class="typewrite">A Backend <span style="color: #9e530c;">Developer</span></h1>
 
                 <!-- <h1> <span>a</span> Graphic Designer</h1> -->
-                <p style="line-height: 27px; letter-spacing: normal;">I use animation as a third dimension by which to
-                    simplify <br> experiences and kuiding thro each and
-                    every interaction. I’m not <br> adding motion just to spruce things up, but doing it in ways that.
+                <p style="width: 70%; text-align: center; position: relative; left: 8rem;">"Every challenge is just another step toward possibility. If I can imagine it, I can make it real."
                 </p>
-                <div class="buttons">
-                    <button class="button">Hire me</button>
-                    <button class="button2">View CV</button>
+
+                <div>
+                    <button class="button">View CV</button>
+                    <!-- <button class="button2">View CV</button> -->
                 </div>
             </div>
-
-            <div class="bg_hero background">
-                <img src=" " alt="">
-            </div>
-
         </div>
     </section>
 
 
     <!-- second section starts here -->
-    <section class="second_section">
-        <div>
-
-        </div>
-
-        <div class="about_me">
-            <h1 style="font-size: 40px; font-weight: bold;">ABOUT ME</h1>
-            <div>
-                <P style="width: 70%; line-height: 27px; letter-spacing: normal;" class="opaquify">Lorem ipsum dolor
-                    sit, amet consectetur adipisicing elit. Quas, accusantium, aliquam consequuntur quidem eum
-                    perspiciatis debitis cum, atque rerum harum enim laborum quasi nemo praesentium sequi totam <br>
-                    <br> impedit in nesciunt eaque assumenda ipsam vitae sapiente at. Aut quaerat ad quidem suscipit
-                    sequi eos corporis laboriosam, repellat, officia quibusdam iste rerum.
-                </P>
-                <div class="space">
-                    <button class="button slide-in-fwd-center">View Portfolio</button>
+    <section>
+            <div class="second_section">
+        <img style="opacity: 0.8;" src="./images/person-front-computer-working-html.jpg" alt="" width="500px" height="500px">
+    
+                <div class="about_me">
+                    <h2 style="position: relative; left: -50px; color: #9e530c;">ABOUT ME</h2>
+                    <P style="font-size: 16px; opacity: 0.8;"> <span >I am a junior developer with a passion for creating efficient and scalable applications. Honing my skills in Node.js and MongoDB, I am able to build robust RESTful APIs and implement data management solutions that drive seamless user experiences. My focus is on leveraging modern frameworks and technologies to develop backend systems that are not only functional but also optimized for performance and security. <br>
+                    <br></span>
+    
+                    With a commitment to continuous learning, I am constantly exploring new tools and methodologies in backend development. My goal is to contribute to innovative projects that push the boundaries of what's possible in the digital landscape.
+                    </P>
+    
+                    <button style="position: relative; left: -20px;" class="button">View Portfolio</button>
+                    
                 </div>
             </div>
 
         </div>
 
     </section>
-
-    <section class="third_section">
-        <h1>PROJECTS</h1>
-        <p>These are a couple of client and personal projects I have worked on</p>
-
-        <div class="portfolio">
-            <div class="banner_bg">
-                <img src="./images/Food-Web-Banner-18.jpg" alt="" width="360px" height="260px">
-                <p>Website for a Restaurant</p>
-            </div>
-
-            <div class="banner_bg">
-                <img src="./images/back_to_school_web_banner_39.jpg" alt="" width="360px" height="260px">
-                <p>Website for a school</p>
-
-            </div>
-
-            <div class="banner_bg">
-                <img src="./images/Lawfirm.jpg" alt="" width="360px" height="260px">
-                <p>Website for a law firm</p>
-            </div>
-            <!-- will fill the banner_bg container with more details from the inspo site later and add slider.
-             I need to add the overlay too-->
-        </div>
-        <button class="button">View all projects</button>
-
-    </section>
-
 
     <section class="forth_section">
-        <h1>Skills</h1>
-        <p style="width: 60%; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veniam
-            eos tenetur et vel aliquid omnis odio quos alias corrupti officia error quod recusandae velit ullam
-            asperiores fugit, eum voluptates?</p>
-
-        <div class="image_container">
-            <div class="content_box">
-                <div class="images">
-                    <img src="./images/frontend.png" alt="">
-                </div>
-
-                <p style="font-weight: bold; font-size: 18px;">Frontend</p>
-                <ul>
-                    <li> <span>&#10003;</span>
-
-                        React/Redux/Angular</li>
-
-                    <li><span>&#10003;</span>
-                        React/Redux/Angular</li>
-
-                    <li><span>&#10003;</span>
-                            React/Redux/Angular</li>
-                    
-                    <li><span>&#10003;</span>
-                                React/Redux/Angular</li>
-
-                </ul>
-            </div>
-
-            <div class="content_box">
-
-                <div class="images">
-                    <img src="./images/frontend.png" alt="">
-                </div>
-
-                <p style="font-weight: bold; font-size: 18px;">Backend</p>
-                <ul>
-                    <li> <span>&#10003;</span>
-
-                        React/Redux/Angular</li>
-
-                    <li><span>&#10003;</span>
-                        React/Redux/Angular</li>
-
-                    <li><span>&#10003;</span>
-                            React/Redux/Angular</li>
-                    
-                    <li><span>&#10003;</span>
-                                React/Redux/Angular</li>
-
-                </ul>
-            </div>
-
-            <div class="content_box">
-
-                <div class="images">
-                    <img src="./images/frontend.png" alt="">
-                </div>
-
-                <div>
-                    <p style="font-weight: bold; font-size: 18px;">Other</p>
-                <ul>
-                    <li> <span>&#10003;</span>
-
-                        React/Redux/Angular</li>
-
-                    <li><span>&#10003;</span>
-                        React/Redux/Angular</li>
-
-                    <li><span>&#10003;</span>
-                            React/Redux/Angular</li>
-                    
-                    <li><span>&#10003;</span>
-                                React/Redux/Angular</li>
-                    
-                </div>
-                </ul>
-            </div>
-
+        <h2>MY SKILLS</h2>
+        <p>At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+        <div>
+            
         </div>
+
     </section>
-</body>
+
+   </body>
 
 </html>
