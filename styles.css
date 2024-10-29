@@ -15,6 +15,8 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
     align-items: center;
     /* padding: 1rem 2rem; */
     padding-top: 1.2rem;
@@ -75,10 +77,10 @@ nav {
     display: flex;
     /* align-items: center; */
     justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
     padding-top: 7rem;
 }
 
@@ -86,6 +88,10 @@ nav {
     /* position: relative; */
     top: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .text_on_hero h1 {
@@ -130,46 +136,39 @@ nav {
 .about {
     margin-top: 5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
-    align-items: center;
-    gap: 20px;
-    /* Optional: adds space between `.div_one` and `.div_two` */
-    padding: 20px;
-    /* Optional: adds some spacing around section */
-}
-
-.div_one {
-    width: 100%;
-    /* Ensures both divs expand to full width */
-    max-width: 800px;
-    /* Optional: Set a max-width to prevent stretching */
-    margin: 0 auto;
-    padding: 10px;
-    text-align: center;
+    align-items: center; 
+    /* gap: 20px; */
+    /* width: 100%;  */
+    padding: 20px; 
 }
 
 .div_two {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    column-gap: 50px;
+    width: 72%;
 }
 
-/* .div_two img {
-    width: 50%;
-    height: 30%;
-} */
+.div_two div {
+    flex: 1; 
+    max-width: 100%; 
+}
+
+.div_two img {
+    max-width: 100%; 
+    height: 500px;
+    width: 400px; 
+}
+
 
 .skills_section{
     margin-top: 5rem;
 }
 
 .skills {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 1rem; */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -198,7 +197,7 @@ nav {
    margin-left: 15%;
    margin-right: 15%;
    border-radius: 10px;
-   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+   box-shadow: 0px 4px 12px rgba(24, 24, 23, 0.2); 
 
 }
 
