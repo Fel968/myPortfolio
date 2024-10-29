@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felicity Semetey</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./index.js" defer ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -17,9 +22,9 @@
         <div class="to_align">
             <a class="nav_items" href="#">About</a>
             <a class="nav_items" href="#">Skills</a>
-            <a class="nav_items" href="#">Portfolio</a>
-            <a class="nav_items" href="#">Resume</a>
+            <a class="nav_items" href="#">Experience</a>
             <a class="nav_items" href="#">Contact</a>
+            <a class="nav_items" href="#">Portfolio</a>
         </div>
     </nav>
 
@@ -27,13 +32,14 @@
         <div class="hero_items overlay">
             <div class="text_on_hero">
                 <!-- <p style="padding-top: 3rem;" >Welcome to my page</p> -->
-                <h1 style="font-size: 60px; padding-top: 4rem; "> <span style="color: #9e530c;">Hi,</span> I'm Felicity
+                <h1 class="poppins-light" style="font-size: 60px; padding-top: 4rem; font-weight: 400; "> Hi, I'm
+                    Felicity
                     Semetey</h1>
 
-                <h1 class="typewrite">A Backend <span style="color: #9e530c;">Developer</span></h1>
+                <h1 class="poppins-light" style="font-weight: 300;">A Backend Developer</h1>
 
                 <!-- <h1> <span>a</span> Graphic Designer</h1> -->
-                <p style="width: 70%; text-align: center; position: relative; left: 8rem;">"Every challenge is just
+                <p style="width: 60%; text-align: center; position: relative; left: 8rem;">"Every challenge is just
                     another step toward possibility. If I can imagine it, I can make it real."
                 </p>
 
@@ -47,78 +53,119 @@
 
 
     <!-- second section starts here -->
-    <section>
-        <div class="second_section">
-            <img style="opacity: 0.8;" src="./images/person-front-computer-working-html.jpg" alt="" width="500px" height="500px">
-
-            <div class="about_me">
-                <h2 style="position: relative; left: -50px; color: #9e530c;">ABOUT ME</h2>
-                <P style="font-size: 16px; opacity: 0.8;"> <span>I am a junior developer with a passion for creating
-                        efficient and scalable applications. Honing my skills in Node.js and MongoDB, I am able to build
-                        robust RESTful APIs and implement data management solutions that drive seamless user
-                        experiences. My focus is on leveraging modern frameworks and technologies to develop backend
-                        systems that are not only functional but also optimized for performance and security. <br>
-                        <br></span>
-
-                    With a commitment to continuous learning, I am constantly exploring new tools and methodologies in
-                    backend development. My goal is to contribute to innovative projects that push the boundaries of
-                    what's possible in the digital landscape.
-                </P>
-
-                <button style="position: relative; left: -20px;" class="button">View Portfolio</button>
-
-            </div>
+    <section class="about">
+        <div class="div_one">
+            <h3 class="titles">About Me</h3>
+            <p>Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>
+        <div class="div_two">
+            <div>
+                <button
+                    style="background-color: #FFF6E9; color: #FFA217; border-radius: 30px; border-color: transparent; width: 3.5rem;">Felicity</button>
+                <p style="font-weight: bold;">More about me</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            </div>
+            <img src="images/pexels-darina-belonogova-8788658.jpg" width="500px" height="400px">
+        </div>
+    </section>
 
+    <section class="skills_section">
+
+        <h3 class="titles" style="text-align: center;">Technical Skills</h3>
+
+
+
+        <div class="skills">
+
+            <!-- <div class="technical-skills"> -->
+
+                <div>
+                    <img src="images/html-5 (2).png" alt="" width="70px" height="70px">
+                    <p>HTML</p>
+                </div>
+
+                <div>
+                    <img src="images/css-3 (1).png" alt="" width="70px" height="70px">
+                    <p>CSS</p>
+                </div>
+
+                <div>
+                    <img src="images/js (2).png" alt="" width="70px" height="70px">
+                    <p>Javascript</p>
+                </div>
+
+                <div>
+                    <img src="images/node-js (1).png" alt="" width="70px" height="70px">
+                    <p>Node js</p>
+                </div>
+
+
+                <div>
+                    <img src="images/data-server (1).png" alt="" width="80px" height="80px">
+                    <p>Mongo DB</p>
+                </div>
+
+                <div>
+                    <img src="images/github.png" alt="" width="80px" height="80px">
+                    <p>Git</p>
+                </div>
+            <!-- </div> -->
         </div>
 
     </section>
 
-    <section class="forth_section">
-        <h2>MY SKILLS</h2>
-        <p>At about this time of year, some months after New Year’s resolutions have been made and kept, or made and
-            neglected.</p>
-
-        <div class="parent">
-            <div class="div1">
-                <img src="" alt="">
-                <p>Web Design</p>
-                <p>“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
+    <section class="experience">
+        <h3 class="titles">Experience</h3>
+        <div class="experience_one">
+            <div class="one">
+                <p>Front-end Software Engineer</p>
+                <p>Jan-Dec 2020</p>
             </div>
 
-            <div class="div2"> 
-                <img src="" alt="">
-                <p>Web Design</p>
-                <p>“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
+            <div>
+                <br>
+                <p>Company Name</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
             </div>
-           
-            <div class="div3"> <img src="" alt="">
-                <p>Web Design</p>
-                <p>“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
-            </div>
-            
-            <div class="div4"> 
-                <img src="" alt="">
-                <p>Web Design</p>
-                <p>“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
-            </div>
-           
-            <div class="div5">
-                <img src="" alt="">
-                <p>Web Design</p>
-                <p>“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
-            </div>
-           
-            <div class="div6">
-                <img src="" alt="">
-                <p>Web Design</p>
-                <p>“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>    
-            </div>
-           
         </div>
 
+        <div class="experience_one">
+            <div class="one">
+                <p>Front-end Software Engineer</p>
+                <p>Jan-Dec 2020</p>
+            </div>
+
+            <div>
+                <br>
+                <p>Company Name</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+
+        <div class="experience_one">
+            <div class="one">
+                <p>Front-end Software Engineer</p>
+                <p>Jan-Dec 2020</p>
+            </div>
+
+            <div>
+                <br>
+                <p>Company Name</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
     </section>
 
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
